@@ -1,4 +1,4 @@
-![Alt text](https://imgur.com/a/HawarfL"Simple React weather application")
+![Alt text](https://imgur.com/a/HawarfL "Simple React weather application")
 
 Check the current weather in the world.
 
