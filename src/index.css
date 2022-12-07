@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont,'Noto Sans JP', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(0, 0, 0, 40%);
+  color: azure;
+}
+
+.main:before {
+  content: '';
+  background: url('./assets/clouds.jpg') no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.top {
+  height: 40vh;
+  padding: 3em;
+  max-width: 700vw;
+}
+
+.bottom {
+  position:absolute;
+  bottom: 10vh;
+  right:3vw;
+  left: 3vw;
+  display: flex;
+  font-size: 130%;
+}
+
+.botborder {
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 15px 20px;
+}
+
+.searchbar {
+  height: 10vh;
+  opacity: 100;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.searchbar input {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 1em 7em;
+  width: auto;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  color: rgb(165, 168, 170); ;
+  outline: none;
+}
+
+::placeholder {
+  color: rgb(165, 168, 170);
+}
+
+.top .bottom {
+  transition: ease-in-out, width 5s ease-in-out;
+}
+
+@media (max-width:850px) {
+  .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
